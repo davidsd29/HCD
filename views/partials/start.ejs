@@ -1,0 +1,28 @@
+<form action="/type" data-outfit-categorie>
+	<label>
+		Casual
+		<input type="radio" name="style" value="casual"  <% if (values.style == 'casual' ) { %> checked <% }%>/>
+	</label>
+
+	<label>
+		Zakelijk
+		<input type="radio" name="style" value="zakelijk"  <% if (values.style == 'zakelijk' ) { %> checked <% }%>/>
+	</label>
+
+	<label>
+		Fancy
+		<input type="radio" name="style" value="fancy"  <% if (values.style == 'fancy' ) { %> checked <% }%> />
+	</label>
+
+	<label>
+		Ontspanning
+		<input type="radio" name="style" value="ontspanning"  <% if (values.style == 'ontspanning' ) { %> checked <% }%> />
+	</label>
+
+	<label>
+		Uit gaan
+		<input type="radio" name="style" value="uitgaan"  <% if (values.style == 'uitgaan' ) { %> checked <% }%>/>
+	</label>
+
+	<input type="submit" value="submit" />
+</form>

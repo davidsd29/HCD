@@ -1,0 +1,28 @@
+<form action="/kleur" id="design">
+    <p>Opties voor de <%= bovenkant %></p>
+    <label>
+        print
+        <input type="radio" name="print" value="print" <% if (values.print == 'print' ) { %> checked <% }%>/>
+    </label>
+
+    <label>
+        plane
+        <input type="radio" name="print" value="plane" <% if (values.print == 'plane' ) { %> checked <% }%> />
+    </label>
+
+    <p>Opties voor de <%= onderkant %></p>
+    <label>
+        spijker
+        <input type="radio" name="fabric" value="spijker" <% if (values.fabric == 'spijker' ) { %> checked <% }%>/>
+    </label>
+
+    <label>
+        stof
+        <input type="radio" name="fabric" value="stof" <% if (values.fabric == 'stof' ) { %> checked <% }%>/>
+    </label>
+
+    <div>
+        <a href="">Terug</a>
+        <button type="submit">Klaar</button>
+    </div>
+</form>

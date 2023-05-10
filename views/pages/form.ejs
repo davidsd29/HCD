@@ -1,0 +1,39 @@
+<%- include('../partials/head'); %>
+
+<body>
+    <main>
+
+        <section>
+            <% switch (pageType) { 
+                case 'start' : %>
+                    <%- include('../partials/start'); %>
+                    <% break;
+
+
+                case 'type' : %>
+                    <%- include('../partials/samenStellen'); %>
+                    <% break;
+
+
+                case 'design' : %>
+                    <%- include('../partials/design', 
+                    {
+                        bovenkant: bovenkant,
+                        onderkant: onderkant,
+                    }); %>
+                    <% break;
+
+
+                case 'kleur' : %>
+                    <%- include('../partials/kleur'); %>
+                    <% break;
+
+                        
+                default : %>
+                    <%- include('../404'); %>
+            
+            <% } %>
+        </section>
+        
+    </main>
+</body>
