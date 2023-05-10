@@ -22,10 +22,30 @@ form label {
 	border: 1px solid black;
 }
 
+label:focus-within {
+	background-color: green;
+}
+
 label:has(input:checked) {
 	background-color: teal;
 }
 
-#design p {
+label:has(input:focus-within) {
+	background-color: green;
+}
+
+form p {
 	position: absolute;
+}
+
+form p:first-of-type {
+	top: 10px;
+}
+form p:last-of-type {
+	top: 40px;
+}
+
+
+form p:nth-of-type(2) {
+	top: 60px;
 }

@@ -1,27 +1,27 @@
 <form action="/design" data-type-kleding>
     <label>
         Jurk
-        <input type="checkbox" name="top" value="jurk" <% if (values.top == 'jurk' ) { %> checked <% }%>/>
+        <input type="radio" name="top" value="jurk" />
     </label>
 
     <label>
-        broek
-        <input type="checkbox" name="bottom" value="broek" <% if (values.bottom == 'broek' ) { %> checked <% }%> />
+        broek/legging
+        <input type="radio" name="bottom" value="broek"  />
     </label>
 
     <label>
         rok
-        <input type="checkbox" name="bottom" value="rok" <% if (values.bottom == 'rok' ) { %> checked <% }%>/>
+        <input type="radio" name="bottom" value="rok" />
     </label>
 
     <label>
         trui
-        <input type="checkbox" name="top" value="trui" <% if (values.top == 'trui' ) { %> checked <% }%>/>
+        <input type="radio" name="top" value="trui" />
     </label>
 
     <label>
         shirt
-        <input type="checkbox" name="top" value="shirt" <% if (values.top == 'shirt' ) { %> checked <% }%>/>
+        <input type="radio" name="top" value="shirt" />
     </label>
 
     <input type="submit" value="klaar" />

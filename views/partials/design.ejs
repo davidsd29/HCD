@@ -1,24 +1,24 @@
 <form action="/kleur" id="design">
-    <p>Opties voor de <%= bovenkant %></p>
-    <label>
+    <p  tabindex="0">Opties voor de <%= bovenkant %></p>
+    <label  tabindex="0">
         print
-        <input type="radio" name="print" value="print" <% if (values.print == 'print' ) { %> checked <% }%>/>
+        <input type="radio" name="print" value="print"/>
     </label>
 
-    <label>
+    <label tabindex="0">
         plane
-        <input type="radio" name="print" value="plane" <% if (values.print == 'plane' ) { %> checked <% }%> />
+        <input type="radio" name="print" value="plane" />
     </label>
 
-    <p>Opties voor de <%= onderkant %></p>
-    <label>
+    <p  tabindex="0">Opties voor de <%= onderkant %></p>
+    <label tabindex="0">
         spijker
-        <input type="radio" name="fabric" value="spijker" <% if (values.fabric == 'spijker' ) { %> checked <% }%>/>
+        <input type="radio" name="fabric" value="spijker"/>
     </label>
 
-    <label>
+    <label tabindex="0">
         stof
-        <input type="radio" name="fabric" value="stof" <% if (values.fabric == 'stof' ) { %> checked <% }%>/>
+        <input type="radio" name="fabric" value="stof"/>
     </label>
 
     <div>
